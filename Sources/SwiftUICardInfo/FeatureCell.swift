@@ -69,7 +69,7 @@ public struct FeatureCell: View, Hashable {
             case .remoteImage(let named):
                 KFImage(named)
                     .placeholder({
-                        Image(systemName: "photo")
+                        Image(systemSymbol: .photo)
                             .resizable()
                     })
                     .resizable()

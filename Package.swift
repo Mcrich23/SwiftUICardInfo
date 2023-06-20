@@ -23,12 +23,13 @@ let package = Package(
         .package(name: "SwiftUIX", url: "https://github.com/SwiftUIX/SwiftUIX", from: "0.1.1"),
         .package(name: "URLImage", url: "https://github.com/dmytro-anokhin/url-image", from: "3.1.0"),
         .package(name: "Kingfisher", url: "https://github.com/onevcat/Kingfisher", from: "7.6.2"),
+        .package(url: "https://github.com/SFSafeSymbols/SFSafeSymbols", from: "4.0.0")
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "SwiftUICardInfo",
-            dependencies: ["SwiftUIX", "Kingfisher", "URLImage"])
+            dependencies: ["SwiftUIX", "Kingfisher", "URLImage", "SFSafeSymbols"])
     ]
 )

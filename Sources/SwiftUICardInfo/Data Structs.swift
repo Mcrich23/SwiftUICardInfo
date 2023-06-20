@@ -44,7 +44,7 @@ public enum GlyphImage: Hashable, Equatable {
  
  # Example #
  ```
- ConvertedGlyphImage(GlyphImage: $GlyphImage, defaultIcon: Image(systemName: "apps.iphone") { image in
+ ConvertedGlyphImage(GlyphImage: $GlyphImage, defaultIcon: Image(systemSymbol: .apps.iphone") { image in
      image
          .resizable()
          .aspectRatio(contentMode: .fit)
@@ -79,7 +79,7 @@ public struct ConvertedGlyphImage<Content: View, Modifier: View>: View {
                     AsyncImage(url: url) { image in
                         modifiers(image)
                     } placeholder: {
-                        modifiers(Image(systemName: "photo"))
+                        modifiers(Image(systemSymbol: .photo))
                     }
                 } else {
                     URLImage(url) { image in

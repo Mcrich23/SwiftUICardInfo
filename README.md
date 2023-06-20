@@ -85,7 +85,7 @@ Converts GlyphImage into a SwiftUI Image
 ## **Example:**
 
  ```
- ConvertedGlyphImage(GlyphImage: $GlyphImage, defaultIcon: Image(systemName: "apps.iphone") { image in
+ ConvertedGlyphImage(GlyphImage: $GlyphImage, defaultIcon: Image(systemSymbol: .apps.iphone") { image in
      image
          .resizable()
          .aspectRatio(contentMode: .fit)
